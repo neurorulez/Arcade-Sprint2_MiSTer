@@ -19,3 +19,4 @@ set_global_assignment -name VHDL_FILE src/deltasigma.vhd
 set_global_assignment -name VHDL_FILE src/cpu_mem.vhd
 set_global_assignment -name VHDL_FILE src/collision.vhd
 set_global_assignment -name QIP_FILE src/Altera/ram1k_dp.qip
+set_global_assignment -name VERILOG_FILE src/joydb15.v
