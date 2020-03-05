@@ -48,21 +48,21 @@ always @(posedge JOY_CLK) begin
         5'd11 : joy2[1]  <= JOY_DATA;  //  P2 Izquierda
         5'd12 : joy2[2]  <= JOY_DATA;  //  P2 Abajo
         5'd13 : joy2[3]  <= JOY_DATA;  //  P2 Arriba
-        5'd14 : joy1[11]  <= JOY_DATA;  //P1 F 
-        5'd15 : joy1[10]  <= JOY_DATA;  //P1 E 
-        5'd16 : joy1[9]  <= JOY_DATA; //P1 Select
-        5'd17 : joy1[8] <= JOY_DATA;  //P1 Start
-        5'd18 : joy2[11]  <= JOY_DATA;  //  P2 F
-        5'd19 : joy2[10]  <= JOY_DATA;  //  P2 E 
-        5'd20 : joy2[9] <= JOY_DATA;  //  P2 Select
-        5'd21 : joy2[8] <= JOY_DATA;  //  P2 Start
+        5'd14 : joy1[9]  <= JOY_DATA;  //P1 F 
+        5'd15 : joy1[8]  <= JOY_DATA;  //P1 E 
+        5'd16 : joy1[11] <= JOY_DATA;  //P1 Select
+        5'd17 : joy1[10] <= JOY_DATA;  //P1 Start
+        5'd18 : joy2[9]  <= JOY_DATA;  //  P2 F
+        5'd19 : joy2[8]  <= JOY_DATA;  //  P2 E 
+        5'd20 : joy2[11] <= JOY_DATA;  //  P2 Select
+        5'd21 : joy2[10] <= JOY_DATA;  //  P2 Start
         5'd22 : joy2[7]  <= JOY_DATA;  //  P2 D
         5'd23 : joy2[6]  <= JOY_DATA;  //  P2 C
         5'd24 : joy2[5]  <= JOY_DATA;  //  P2 B
         5'd25 : joy2[4]  <= JOY_DATA;  //  P2 A
     endcase              
 end
-//----HNLS DCBAUDLR
+//----LS FEDCBAUDLR
 assign joystick1[15:0] = ~joy1;
 assign joystick2[15:0] = ~joy2;
 
